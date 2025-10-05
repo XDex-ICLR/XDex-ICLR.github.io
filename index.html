@@ -250,39 +250,20 @@
         
     </section>
 
-    <section class="section is-small" id="pipeline">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column is-four-fifths is-centered">
-            <h2 class="title is-3 has-text-centered is-size-5-mobile">Iterative Data Generation</h2>
-            <div class="content has-text-justified">
-              <p>
-                We first utilize an optimization algorithm to generate the Seed dataset. The Seed dataset is then used as training data for DexSimple.
-                DexSimple is subsequently used to sample a scaled proposal dataset. The scaled dataset is validated using simulation. We intentionally
-                debias the hand poses and objects to increase diversity.
-              </p>
-            </div>
-            <video autoplay="" muted="" loop="" playsinline="" height="100%" loading="lazy">
-              <source src="./static/videos/pipeline.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section class="section is-small" id="method">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column is-four-fifths is-centered">
-            <h2 class="title is-3 has-text-centered is-size-5-mobile">DexSimple Model</h2>
+            <h2 class="title is-3 has-text-centered is-size-5-mobile">XDex Model</h2>
             <div class="content has-text-justified">
               <p>
-                We condition the CVAE model with hand parameters as well as local object point features. The hand parameters are associated with the
-                local object point. The model is supervised using both standard MSE and KL loss, along with an approximate SDF loss to enforce
-                geometric constraints.
+                We employ a transformer-based generative model for cross-embodiment grasping. The object and robot hand geometry is represented by point cloud. The grasp pose is represented by the set of 6D Joint transformations, where each joint transformation denotes the rotation and translation of the parent joint of each link. The model is trained using a conditional variational autoencoder (CVAE), where the hand feature and object geometry serve as conditions.
               </p>
             </div>
-            <img src="./Dex1B_files/method.png" alt="Method" style="width: 100%; object-fit: cover">
+          <div style="background: white; display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+            <img src="./files/iclr_method.png" alt="Method" style="width: 100%; object-fit: cover">
+          </div>
           </div>
         </div>
       </div>
