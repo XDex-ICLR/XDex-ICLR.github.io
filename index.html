@@ -223,7 +223,7 @@
 
 
     <video id="demo-video" playsinline="" autoplay="" muted="" loop="" preload="metadata" loading="lazy" style="width: 100%; object-fit: cover">
-      <source id="demo-video-source" src="./static/videos/grasping-video.mp4" type="video/mp4">
+      <source id="demo-video-source" src="./files/real_xhand_scaled.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
 
@@ -234,48 +234,19 @@
             <div class="column is-four-fifths is-centered">
               <h2 class="title is-3 has-text-centered is-size-5-mobile">Real-World Deployment</h2>
               <video autoplay="" muted="" loop="" playsinline="" width="100%" loading="lazy">
-                <source src="./static/videos/real-4x.mp4" type="video/mp4">
+                <source src="./files/real_xhand_scaled.mp4" type="video/mp4">
               </video>
               <div class="content">
-                We deploy the DexSimple policy in a zero-shot sim-to-real fashion. In the video above, we mount the Ability Hand onto an XArm and
+                We deploy the XDex policy in a zero-shot sim-to-real fashion. In the video above, we mount the XHand onto an XArm and
                 place a calibrated RealSense camera in a third-person view. As shown, the grasping motions are smooth and stable, and the policy
                 predicts diverse grasps for different objects.
-              </div>
-
-              <h2 class="title is-4 has-text-centered is-size-6-mobile">Spatial Generalizability</h2>
-              <div id="results-carousel" class="slider results-carousel">
-                
-                
-                
-              <div id="slider86617005-e1eb-4c61-b1ed-c5e1d31ea795" class="slider" tabindex="0">
-    <div class="slider-container" style="opacity: 1; width: 2097px; transition: none; transform: translate3d(0px, 0px, 0px);"><div class="slider-item is-current" data-slider-index="0" style="width: 699px;"><div class="item item-spatial-0">
-                  <video poster="" id="steve" autoplay="" controls="" muted="" loop="" playsinline="" width="100%" loading="lazy">
-                    <source src="./static/videos/spatial-0-4x.mp4" type="video/mp4">
-                  </video>
-                </div></div><div class="slider-item is-slide-previous is-slide-next" data-slider-index="1" style="width: 699px;"><div class="item item-spatial-1">
-                  <video poster="" id="steve" autoplay="" controls="" muted="" loop="" playsinline="" width="100%" loading="lazy">
-                    <source src="./static/videos/spatial-1-4x.mp4" type="video/mp4">
-                  </video>
-                </div></div><div class="slider-item" data-slider-index="2" style="width: 699px;"><div class="item item-spatial-2">
-                  <video poster="" id="steve" autoplay="" controls="" muted="" loop="" playsinline="" width="100%" loading="lazy">
-                    <source src="./static/videos/spatial-2-4x.mp4" type="video/mp4">
-                  </video>
-                </div></div></div>
-  <div class="slider-navigation-previous is-hidden"><svg viewBox="0 0 50 80" xml:space="preserve">
-      <polyline fill="currentColor" stroke-width=".5em" stroke-linecap="round" stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 "></polyline>
-    </svg></div>
-<div class="slider-navigation-next"><svg viewBox="0 0 50 80" xml:space="preserve">
-      <polyline fill="currentColor" stroke-width=".5em" stroke-linecap="round" stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 "></polyline>
-    </svg></div><div class="slider-pagination"><div class="slider-page is-active" data-index="0"></div><div class="slider-page" data-index="1"></div><div class="slider-page" data-index="2"></div></div></div></div>
-
-              <div class="content">
-                We showcase the spatial generalizability of our policy in the videos above. The object is placed at various locations sequentially and
-                is successfully grasped.
               </div>
             </div>
           </div>
         </div>
       </div>
+                
+        
     </section>
 
     <section class="section is-small" id="pipeline">
