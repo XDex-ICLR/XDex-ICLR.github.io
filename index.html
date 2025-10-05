@@ -66,29 +66,11 @@
           <div class="container is-size-5">
             <div class="navbar-menu">
               <div class="navbar-end">
-                <a class="navbar-item pl-4 pr-4" href="https://jianglongye.com/dex1b/static/dex1b.pdf">
-                  <span class="icon" style="margin-right: 5px">
-                    <img src="./files/pdf.svg" alt="PDF">
-                  </span>
-                  <span>Paper</span>
-                </a>
-                <a class="navbar-item pl-4 pr-4" href="https://arxiv.org/abs/2506.17198">
-                  <span class="icon" style="margin-right: 5px">
-                    <img src="./files/arxiv.svg" alt="ArXiv">
-                  </span>
-                  <span>arXiv</span>
-                </a>
                 <a href="https://youtu.be/2Cre8e0rN3k" class="navbar-item pl-4 pr-4">
                   <span class="icon" style="margin-right: 5px">
                     <img src="./files/youtube.svg" alt="Youtube">
                   </span>
                   <span>Video</span>
-                </a>
-                <a href="https://x.com/jianglong_ye/status/1936920891327402271" class="navbar-item pl-4 pr-4">
-                  <span class="icon is-medium" style="margin-right: 5px">
-                    <img src="./files/twitter-x.svg" alt="X (Twitter)">
-                  </span>
-                  <span>Summary</span>
                 </a>
                 <!-- <span class="navbar-item pl-4 pr-4">
                   <a href="" class="button is-inverted is-large">
@@ -222,6 +204,7 @@
           <div class="columns is-max-desktop is-centered">
             <div class="column is-four-fifths is-centered">
               <h2 class="title is-3 has-text-centered is-size-5-mobile">Real-World Deployment</h2>
+              <h3 class="title is-3 has-text-centered is-size-6-mobile">Xhand Uncut Grasping</h3>
               <video autoplay="" muted="" loop="" playsinline="" width="100%" loading="lazy">
                 <source src="./files/real_xhand_scaled.mp4" type="video/mp4">
               </video>
@@ -233,6 +216,30 @@
             </div>
           </div>
 
+          <div class="columns is-max-desktop is-centered">
+            <div class="column is-four-fifths is-centered">
+              <h2 class="title is-3 has-text-centered is-size-5-mobile">Generalize to Different Hand Topologies</h2>
+              <h3 class="title is-3 has-text-centered is-size-6-mobile">3 Fingers XHand</h3>
+              <video autoplay="" muted="" loop="" playsinline="" width="100%" loading="lazy">
+                <source src="./files/3finger-apple.mp4" type="video/mp4">
+              </video>
+              <video autoplay="" muted="" loop="" playsinline="" width="100%" loading="lazy">
+                <source src="./files/3fingers-pear.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="columns is-max-desktop is-centered">
+            <div class="column is-four-fifths is-centered">
+              <h3 class="title is-3 has-text-centered is-size-6-mobile">2 Fingers XHand</h3>
+              <video autoplay="" muted="" loop="" playsinline="" width="100%" loading="lazy">
+                <source src="./files/2fingers-apple.mp4" type="video/mp4">
+              </video>
+              <video autoplay="" muted="" loop="" playsinline="" width="100%" loading="lazy">
+                <source src="./files/2fingers-bottle.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
 
           <div class="columns is-max-desktop is-centered">
             <div class="column is-four-fifths is-centered">
@@ -247,7 +254,7 @@
                 <source src="./files/policy_retarget.mp4" type="video/mp4">
               </video>
               <div class="content">
-                In ours' case, when the human hand makes contact with the object, we extract its keypoints and feed them into our model, which is conditioned on the object features and the geometry of the hand, so that it can output robot hand poses that mirrors the human hand’s pose while still being able to successfully complete the task.
+                In ours' case, when the human hand makes contact with the object, we extract its keypoints and feed them into our model, which is conditioned on the object features and the geometry of the hand, so that it can output robot hand poses that mirrors the human hand's pose while still being able to successfully complete the task.
               </div>
             </div>
           </div>
