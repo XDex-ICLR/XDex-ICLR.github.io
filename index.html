@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>XDex</title>
 
-    <link rel="icon" type="image/svg+xml" href=".files/static/images/ucsd-seal.svg">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><text y='50%' x='50%' text-anchor='middle' dominant-baseline='central' font-size='48'>🤖</text></svg>">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="" src="./files/js"></script>
     <script>
@@ -112,12 +112,6 @@
             Learning Cross-Embodiment Dexterous Grasping with 1000 Hands
           </h1>
 
-
-          /* <!-- UCSD Logo -->
-          <div class="has-text-centered" style="margin-top: 1.5rem">
-            <img src="./files/UCSanDiegoLogo-White.png" alt="UC San Diego Logo" style="height: 2.5rem" class="is-hidden-mobile">
-            <img src="./files/UCSanDiegoLogo-White.png" alt="UC San Diego Logo" style="height: 1.8rem" class="is-hidden-tablet">
-          </div> */
 
           <div class="column has-text-centered is-hidden-tablet">
             <div class="publication-links">
@@ -238,7 +232,25 @@
               </div>
             </div>
           </div>
-        </div>
+
+
+          <div class="columns is-max-desktop is-centered">
+            <div class="column is-four-fifths is-centered">
+              <h2 class="title is-3 has-text-centered is-size-5-mobile">Application: Object Awared Retargeting</h2>
+              <video autoplay="" muted="" loop="" playsinline="" width="100%" loading="lazy">
+                <source src="./files/teleop.mp4" type="video/mp4">
+              </video>
+              <div class="content">
+                Standard retargeting, due to the lack of object features, can only align the human hand pose with the robot hand pose but cannot ensure successful task completion.
+              </div>
+              <video autoplay="" muted="" loop="" playsinline="" width="100%" loading="lazy">
+                <source src="./files/policy_retarget.mp4" type="video/mp4">
+              </video>
+              <div class="content">
+                In ours' case, when the human hand makes contact with the object, we extract its keypoints and feed them into our model, which is conditioned on the object features and the geometry of the hand, so that it can output robot hand poses that mirrors the human hand’s pose while still being able to successfully complete the task.
+              </div>
+            </div>
+          </div>
       </div>
                 
         
